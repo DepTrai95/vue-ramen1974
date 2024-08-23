@@ -23,10 +23,10 @@
       <label for="select-restaurant"> Bitte ein Lokal auswählen <abbr title="Pflichtfeld">*</abbr> </label>
       <select class="form-control" id="select-restaurant" name="select-restaurant" v-model="restaurant.val" required>
         <option value="">--Bitte Auswahl treffen--</option>
-        <option value="Dresden Neustadt">Ramen1974 - Dresden Neustadt</option>
-        <option value="Dresden Altstadt">Ramen1974 - Dresden Altstadt</option>
-        <option value="Leipzig Karl-Liebknecht-Straße">Ramen1974 - Leipzig Karl-Liebknecht-Straße</option>
-        <option value="Leipzig Zentrum">Ramen1974 - Leipzig Zentrum</option>
+        <option value="Dresden Neustadt">Dresden Neustadt</option>
+        <option value="Dresden Altstadt">Dresden Altstadt</option>
+        <option value="Leipzig Karl-Liebknecht-Straße">Leipzig Karl-Liebknecht-Straße</option>
+        <option value="Leipzig Zentrum">Leipzig Zentrum</option>
       </select>
     </div>
     <!-- DATEPICKER -->

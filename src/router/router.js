@@ -33,7 +33,7 @@ const router = createRouter({
       path: '/contact',
       component: Contact,
       meta: {
-        headline: 'Contact us',
+        headline: 'Kontakt',
         showBackground: true
       }
     },

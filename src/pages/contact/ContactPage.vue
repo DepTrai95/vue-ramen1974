@@ -20,33 +20,31 @@
                <div class="grid-item">
                   <div class="reservation-info">
                      <h2>Telefonisch</h2><br>
-                     <p class="center">
+                     <p>
                         Sie können uns telefonisch erreichen um eine Tischreservierung vorzunehmen oder aber auch um
                         Bestellungen aufzugeben, die Sie gerne abholen würden. Erreichbar sind wir von
                         <span>{{ lunchTime }}</span>
                         <span>{{ dinnerTime }}</span>
                      </p>
                      <h2>Unsere Lokale</h2><br>
-                     <p class="center">
-                        {{ dresdenNeustadt.address }}<br>
-                        Tel.: <a :href="`tel:` + dresdenNeustadt.number">{{ dresdenNeustadt.number }}</a><br>
-                        E-Mail: <a :href="`mailto:` + dresdenNeustadt.mail">{{ dresdenNeustadt.mail }}</a>
-                     </p>
-                     <p class="center">
-                        {{ dresdenPrager.address }}<br>
-                        Tel.: <a :href="`tel:` + dresdenPrager.number">{{ dresdenPrager.number }}</a><br>
-                        E-Mail: <a :href="`mailto:` + dresdenPrager.mail">{{ dresdenPrager.mail }}</a>
-                     </p>
-                     <p class="center">
-                        {{ leipzigKarli.address }}<br>
-                        Tel.: <a :href="`tel:` + leipzigKarli.number">{{ leipzigKarli.number }}</a><br>
-                        E-Mail: <a :href="`mailto:` + leipzigKarli.mail">{{ leipzigKarli.mail }}</a>
-                     </p>
-                     <p class="center">
-                        {{ leipzigZentrum.address }}<br>
-                        Tel.: <a :href="`tel:` + leipzigZentrum.number">{{ leipzigZentrum.number }}</a><br>
-                        E-Mail: <a :href="`mailto:` + leipzigZentrum.mail">{{ leipzigZentrum.mail }}</a>
-                     </p>
+                     <div class="form-group">
+                        <label for="restaurant-information"> Bitte ein Lokal auswählen</label>
+                        <select class="form-control" id="restaurant-information" name="select-restaurant"
+                           v-model="selectedRestaurant" required>
+                           <option value="Dresden Neustadt">Dresden Neustadt</option>
+                           <option value="Dresden Altstadt">Dresden Altstadt</option>
+                           <option value="Leipzig Karl-Liebknecht-Straße">Leipzig Karl-Liebknecht-Straße</option>
+                           <option value="Leipzig Zentrum">Leipzig Zentrum</option>
+                        </select>
+                     </div>
+                     <div v-for="restaurant in restaurants" :key="restaurant.id">
+                        <p v-if="restaurant.name === selectedRestaurant">
+                           {{ restaurant.address }}<br>
+                           Tel.: <a :href="`tel:${restaurant.number}`">{{ restaurant.number }}</a><br>
+                           E-Mail: <a :href="`mailto:${restaurant.mail}`">{{ restaurant.mail }}</a><br>
+                           Instagram: <a :href="restaurant.instagram">{{ restaurant.instagram }}</a>
+                        </p>
+                     </div>
                      <p>
                         Wir freuen uns auf Ihre Kontaktaufnahme. Schreiben Sie uns und wir melden uns so schnell wie
                         möglich zurück. Vielen Dank!
@@ -71,30 +69,50 @@ export default {
    },
    data() {
       return {
+         selectedRestaurant: 'Dresden Neustadt', // Initial selected restaurant
          lunchTime: "11:30 - 14:30",
          dinnerTime: "17:00 - 22:00",
-         dresdenNeustadt: {
-            address: 'Alaunstraße 23, 01099 Dresden',
-            number: '0351 81075888',
-            mail: 'info@ramen1974.de'
-         },
-         dresdenPrager: {
-            address: 'Prager Str. 7, 01069 Dresden',
-            number: '0351 48488370',
-            mail: 'info@ramen1974.de'
-         },
-         leipzigKarli: {
-            address: 'Karl-Liebknecht-Straße 97, 04275 Leipzig',
-            number: '0341 30677090',
-            mail: 'leipzig-karli@ramen1974.de'
-         },
-         leipzigZentrum: {
-            address: 'Hainstraße 10, 04109 Leipzig',
-            number: '0178 4918616',
-            mail: 'leipzig-zentrum@ramen1974.de'
-         },
+         restaurants: [
+            {
+               id: 1,
+               name: 'Dresden Neustadt',
+               address: 'Alaunstraße 23, 01099 Dresden',
+               number: '0351 81075888',
+               mail: 'info@ramen1974.de',
+               instagram: 'https://www.instagram.com/ramen1974dresden/',
+            },
+            {
+               id: 2,
+               name: 'Dresden Altstadt',
+               address: 'Prager Str. 7, 01069 Dresden',
+               number: '0351 48488370',
+               mail: 'info@ramen1974.de',
+               instagram: 'https://www.instagram.com/ramen1974dresden/',
+            },
+            {
+               id: 3,
+               name: 'Leipzig Karl-Liebknecht-Straße',
+               address: 'Karl-Liebknecht-Straße 97, 04275 Leipzig',
+               number: '0341 30677090',
+               mail: 'leipzig-karli@ramen1974.de',
+               instagram: 'https://www.instagram.com/ramen1974leipzig/',
+            },
+            {
+               id: 4,
+               name: 'Leipzig Zentrum',
+               address: 'Hainstraße 10, 04109 Leipzig',
+               number: '0178 4918616',
+               mail: 'leipzig-zentrum@ramen1974.de',
+               instagram: 'https://www.instagram.com/ramen1974.zentrumleipzig/',
+            },
+         ],
       };
    },
+   computed: {
+      currentRestaurant() {
+         return this.restaurants.find(restaurant => restaurant.name === this.selectedRestaurant);
+      }
+   }
 };
 </script>
 
@@ -111,14 +129,6 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-
-   @include for-phone-only {
-      align-items: center;
-
-      .center {
-         text-align: center;
-      }
-   }
 
    span {
       display: block;
@@ -146,6 +156,28 @@ p {
    svg {
       display: block;
       width: 100%;
+   }
+}
+
+.form-control {
+   @include responsive-font-size(1.8rem, 1.9rem);
+   border: 2px solid #51515137;
+   border-radius: 4px;
+   display: block;
+   color: $color-body;
+   font-family: inherit;
+   line-height: 1.3;
+   margin-block: 1rem;
+   min-height: 3rem;
+   outline: none;
+   padding: 0.5rem 1rem;
+   transition: border 0.3s;
+   width: 100%;
+
+   &:hover,
+   &:focus,
+   &:focus-visible {
+      border: 2px solid $color-primary;
    }
 }
 </style>
