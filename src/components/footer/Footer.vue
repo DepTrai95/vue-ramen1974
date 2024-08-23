@@ -3,10 +3,11 @@
       <div class="restaurant__information">
          <div class="footer__addresses">
             <h3>UNSERE STANDORTE</h3>
-            <p>Alaunstraße 23 - 01099 Dresden</p>
-            <p>Prager Str. 7 - 01069 Dresden</p>
-            <p>Karl-Liebknecht-Straße 97 - 04275 Leipzig</p>
-            <p>Hainstr. 10 - 04109 Leipzig</p>
+            <a class="footer__link" href="https://maps.app.goo.gl/WkowBaccnf61JC8o9">Alaunstraße 23 - 01099 Dresden</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/dMRZQbX4anF8QJux5">Prager Str. 7 - 01069 Dresden</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/ug2hGZ6iiR57m97K8">Karl-Liebknecht-Straße 97 - 04275
+               Leipzig</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/T89eCG7edypdJxXL7">Hainstr. 10 - 04109 Leipzig</a>
          </div>
          <div class="footer__opening-hours">
             <h3>ÖFFNUNGSZEITEN:</h3>
@@ -113,11 +114,19 @@ export default {
       @include responsive-font-size(1.8rem, 2rem);
       margin-block-end: 5rem;
    }
-}
 
-.footer__addresses {
-   p {
-      margin: 0.25rem;
+   &__link {
+      color: $color-white;
+      display: flex;
+      line-height: 1.5;
+      margin-block: 0.5rem;
+      text-decoration: none;
+      transition: color $transition-timing;
+
+      &:hover,
+      &:focus {
+         color: $color-primary;
+      }
    }
 }
 

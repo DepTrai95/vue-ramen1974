@@ -258,7 +258,7 @@ const date = ref(null);
   &:hover,
   &:focus,
   &:focus-visible {
-    border: 2px solid $color-secondary;
+    border: 2px solid $color-primary;
   }
 }
 
@@ -308,7 +308,7 @@ textarea {
   &:hover,
   &:focus,
   &:focus-visible {
-    border: 2px solid $color-secondary !important;
+    border: 2px solid $color-primary !important;
   }
 }
 
@@ -329,7 +329,7 @@ textarea {
   padding: 0.5rem 1rem;
 
   &:hover {
-    border-color: $color-secondary !important;
+    border-color: $color-primary !important;
   }
 }
 
@@ -337,7 +337,7 @@ textarea {
   background: $color-header !important;
 
   &:hover {
-    background: $color-secondary !important;
+    background: $color-primary !important;
   }
 }
 

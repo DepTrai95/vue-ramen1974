@@ -66,8 +66,8 @@ a {
    color: $color-white;
 
    &:hover {
-      background-color: $color-secondary;
-      border-color: $color-secondary;
+      background-color: $color-primary;
+      border-color: $color-primary;
       box-shadow: 0px 5px 15px 3px rgba(80, 80, 80, 0.3)
    }
 }

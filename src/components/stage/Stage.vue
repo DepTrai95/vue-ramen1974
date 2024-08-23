@@ -124,7 +124,7 @@ export default {
 
    h2 {
       @include responsive-font-size(8.5rem, 9rem);
-      color: $color-secondary;
+      color: $color-primary;
       font-family: "HerrVonMuellerhoff", "Brush Script MT Italic", sans-serif;
       font-weight: 400;
       text-align: center;

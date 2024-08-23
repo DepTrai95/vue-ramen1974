@@ -96,7 +96,7 @@ export default {
 
    a {
       @include responsive-font-size(2rem, 2.1rem);
-      color: $color-primary-dark;
+      color: $color-secondary;
       text-transform: uppercase;
       overflow: hidden;
       padding-block: 1rem;
@@ -112,6 +112,7 @@ export default {
 
       &::before {
          border: 1px solid currentColor;
+         border: 1.5px solid currentColor;
          bottom: 0;
          content: "";
          left: 0;
@@ -136,9 +137,16 @@ export default {
 
 <style lang="scss">
 .grid-image-gallery {
-   flex-direction: row !important;
-   flex-wrap: wrap !important;
-   justify-content: flex-start !important;
+
+   @include for-tablet-only {
+      flex-direction: row !important;
+   }
+
+   @include for-tablet-landscape-up {
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: flex-start !important;
+   }
 
    .grid-item {
       padding: 1rem !important;
