@@ -1,0 +1,151 @@
+<template>
+   <section class="contact" id="contact-page">
+      <div class="border-waves-before">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 38 28" width="19px" height="14px">
+            <defs>
+               <pattern id="wavePattern" width="38" height="28" patternUnits="userSpaceOnUse" fill="none">
+                  <path
+                     d="M-8.8817842e-16,-0.000266139407 L-8.8817842e-16,28 C9,28 13,16 19,16 C25,16 29,28 38,28 L38,-0.000266139407 C29,8.67361738e-19 25,12 19,12 C13,12 9,0 -8.8817842e-16,-0.000266139407 Z"
+                     id="Path-3" fill="currentColor"></path>
+               </pattern>
+            </defs>
+            <rect x="-10000" class="rect-anchor-50-50" width="20000" height="28" style="fill: url(#wavePattern);">
+            </rect>
+         </svg>
+      </div>
+      <div class="inner">
+         <section class="contact-us" id="contact-us">
+            <div class="grid--default grid-2--tablet-landscape-up">
+               <div class="grid-item">
+                  <div class="reservation-info">
+                     <h2>Telefonisch</h2><br>
+                     <p class="center">
+                        Sie können uns telefonisch erreichen um eine Tischreservierung vorzunehmen oder aber auch um
+                        Bestellungen aufzugeben, die Sie gerne abholen würden. Erreichbar sind wir von
+                        <span>{{ lunchTime }}</span>
+                        <span>{{ dinnerTime }}</span>
+                     </p>
+                     <h2>Unsere Lokale</h2><br>
+                     <p class="center">
+                        {{ dresdenNeustadt.address }}<br>
+                        Tel.: <a :href="`tel:` + dresdenNeustadt.number">{{ dresdenNeustadt.number }}</a><br>
+                        E-Mail: <a :href="`mailto:` + dresdenNeustadt.mail">{{ dresdenNeustadt.mail }}</a>
+                     </p>
+                     <p class="center">
+                        {{ dresdenPrager.address }}<br>
+                        Tel.: <a :href="`tel:` + dresdenPrager.number">{{ dresdenPrager.number }}</a><br>
+                        E-Mail: <a :href="`mailto:` + dresdenPrager.mail">{{ dresdenPrager.mail }}</a>
+                     </p>
+                     <p class="center">
+                        {{ leipzigKarli.address }}<br>
+                        Tel.: <a :href="`tel:` + leipzigKarli.number">{{ leipzigKarli.number }}</a><br>
+                        E-Mail: <a :href="`mailto:` + leipzigKarli.mail">{{ leipzigKarli.mail }}</a>
+                     </p>
+                     <p class="center">
+                        {{ leipzigZentrum.address }}<br>
+                        Tel.: <a :href="`tel:` + leipzigZentrum.number">{{ leipzigZentrum.number }}</a><br>
+                        E-Mail: <a :href="`mailto:` + leipzigZentrum.mail">{{ leipzigZentrum.mail }}</a>
+                     </p>
+                     <p>
+                        Wir freuen uns auf Ihre Kontaktaufnahme. Schreiben Sie uns und wir melden uns so schnell wie
+                        möglich zurück. Vielen Dank!
+                     </p>
+                  </div>
+               </div>
+               <div class=" grid-item">
+                  <contact-form></contact-form>
+               </div>
+            </div>
+         </section>
+      </div>
+   </section>
+</template>
+
+<script>
+import ContactForm from "../../components/form/ContactForm.vue";
+
+export default {
+   components: {
+      ContactForm,
+   },
+   data() {
+      return {
+         lunchTime: "11:30 - 14:30",
+         dinnerTime: "17:00 - 22:00",
+         dresdenNeustadt: {
+            address: 'Alaunstraße 23, 01099 Dresden',
+            number: '0351 81075888',
+            mail: 'info@ramen1974.de'
+         },
+         dresdenPrager: {
+            address: 'Prager Str. 7, 01069 Dresden',
+            number: '0351 48488370',
+            mail: 'info@ramen1974.de'
+         },
+         leipzigKarli: {
+            address: 'Karl-Liebknecht-Straße 97, 04275 Leipzig',
+            number: '0341 30677090',
+            mail: 'leipzig-karli@ramen1974.de'
+         },
+         leipzigZentrum: {
+            address: 'Hainstraße 10, 04109 Leipzig',
+            number: '0178 4918616',
+            mail: 'leipzig-zentrum@ramen1974.de'
+         },
+      };
+   },
+};
+</script>
+
+<style lang="scss" scoped>
+#contact-page {
+   position: relative;
+}
+
+.contact-us {
+   padding: 5rem 0;
+}
+
+.reservation-info {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+   @include for-phone-only {
+      align-items: center;
+
+      .center {
+         text-align: center;
+      }
+   }
+
+   span {
+      display: block;
+      margin-block: .5rem;
+   }
+}
+
+a {
+   color: $color-primary;
+}
+
+p {
+   margin-block: 0 1.5rem;
+}
+
+.border-waves-before {
+   color: $color-white;
+   height: 15px;
+   left: 0;
+   position: absolute;
+   top: -8px;
+   width: 100%;
+   z-index: 10;
+
+   svg {
+      display: block;
+      width: 100%;
+   }
+}
+</style>

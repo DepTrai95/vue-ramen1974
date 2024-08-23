@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ramen1974.de/sitemap.xml
