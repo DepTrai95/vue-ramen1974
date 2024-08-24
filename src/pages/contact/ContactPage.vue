@@ -26,9 +26,8 @@
                         <span>{{ lunchTime }}</span>
                         <span>{{ dinnerTime }}</span>
                      </p>
-                     <h2>Unsere Lokale</h2><br>
+                     <h2>Unsere Lokale</h2>
                      <div class="form-group">
-                        <label for="restaurant-information"> Bitte ein Lokal auswählen</label>
                         <select class="form-control" id="restaurant-information" name="select-restaurant"
                            v-model="selectedRestaurant" required>
                            <option value="Dresden Neustadt">Dresden Neustadt</option>
@@ -42,7 +41,7 @@
                            {{ restaurant.address }}<br>
                            Tel.: <a :href="`tel:${restaurant.number}`">{{ restaurant.number }}</a><br>
                            E-Mail: <a :href="`mailto:${restaurant.mail}`">{{ restaurant.mail }}</a><br>
-                           Instagram: <a :href="restaurant.instagram">{{ restaurant.instagram }}</a>
+                           Social Media: <a :href="restaurant.instagram">Instagram</a>
                         </p>
                      </div>
                      <p>

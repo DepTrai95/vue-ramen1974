@@ -1,0 +1,59 @@
+<template>
+   <section>
+      <div class="inner">
+         <div class="text-center">
+            <p>
+               Bei Ihrer Reservierung/Anfrage kam es leider zu Problemen.
+               Bitte versuchen Sie es später erneut oder direkt über E-Mail!
+            </p>
+            <router-link to="/" class="btn--primary">← Zurück zur Homepage</router-link>
+            <router-link to="/contact" class="btn--primary">← Zurück zur Formular</router-link>
+         </div>
+      </div>
+   </section>
+</template>
+
+<style lang="scss" scoped>
+section {
+   margin-block: 7rem;
+}
+
+p {
+   @include responsive-font-size(1.8rem, 2rem);
+   margin-bottom: 3rem;
+}
+
+.btn--primary {
+   background-color: transparent;
+   border: 2px solid transparent;
+   border-radius: 4px;
+   box-shadow: 0px 5px 20px 5px rgba(80, 80, 80, 0.2);
+   color: inherit;
+   cursor: pointer;
+   font-size: inherit;
+   height: unset !important;
+   justify-content: center;
+   line-height: 1.5;
+   margin-block: 1.5rem;
+   min-height: 3rem;
+   min-width: 170px;
+   outline: 1px solid transparent;
+   padding: 10px;
+   text-decoration: none;
+   transition: background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.3s ease-in, color 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+   +.btn--primary {
+      margin-inline: 2rem;
+   }
+}
+
+.btn--primary {
+   background-color: $color-primary;
+   color: $color-white;
+
+   &:hover {
+      background-color: $color-header;
+      border-color: $color-header;
+   }
+}
+</style>

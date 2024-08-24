@@ -36,7 +36,7 @@ export default {
    methods: {
       updateHeaderProps(route) {
          this.headerHeightMax = route.meta.headerHeightMax !== undefined ? route.meta.headerHeightMax : false;
-         this.headline = route.meta.headline || 'Anamit';
+         this.headline = route.meta.headline || 'Ramen1974';
          this.showSubHeader = route.meta.showSubHeader !== undefined ? route.meta.showSubHeader : false;
          this.showBackground = route.meta.showBackground !== undefined ? route.meta.showBackground : false;
       },

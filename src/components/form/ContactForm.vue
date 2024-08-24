@@ -31,11 +31,12 @@
     </div>
     <!-- DATEPICKER -->
     <div class="form-group" :class="{ invalid: !selectedDate.isValid }">
-      <label for="selectedDate">
+      <label for="dp-input-selectedDate">
         Datum und Zeit <abbr title="Pflichtfeld">*</abbr>
       </label>
-      <VueDatePicker v-model="selectedDate.val" class="customCalendarStyle" :minDate="minDate" :maxDate="maxDate"
-        @blur="clearValidity('selectedDate')" placeholder="DD/MM/YYYY - HH:MM">
+      <VueDatePicker uid="selectedDate" v-model="selectedDate.val" class="customCalendarStyle" :minDate="minDate"
+        :maxDate="maxDate" @blur="clearValidity('selectedDate')" placeholder="DD/MM/YYYY - HH:MM" locale="de"
+        cancelText="Abbrechen" selectText="Auswählen">
       </VueDatePicker>
       <p v-if="!selectedDate.isValid" :class="{ invalid: !selectedDate.isValid }">
         Es muss ein Datum ausgewählt sein
@@ -173,6 +174,21 @@ export default {
         date: this.formatDate(this.selectedDate.val),
       };
 
+      const receiverEmail = (() => {
+        switch (formData.restaurant) {
+          case "Dresden Neustadt":
+            return "info@ramen1974.de";
+          case "Dresden Altstadt":
+            return "info@ramen1974.de";
+          case "Leipzig Karl-Liebknecht-Straße":
+            return "leipzig-karli@ramen1974.de";
+          case "Leipzig Zentrum":
+            return "leipzig-zentrum@ramen1974.de";
+          default:
+            return "info@ramen1974.de"; // Default email if no match found
+        }
+      })();
+
       try {
         const response = await fetch("/.netlify/functions/sendEmail", {
           method: "POST",
@@ -180,7 +196,7 @@ export default {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            to: "info@anamit.de", // set email of receiver
+            to: receiverEmail, // set email of receiver
             name: formData.name,
             email: formData.email,
             text: formData.message,
@@ -193,8 +209,8 @@ export default {
         this.$router.push("/success");
       } catch (error) {
         console.error("Fehler beim Abschicken des Kontaktformulars:", error);
+        this.$router.push("/error");
       }
-
     },
   },
   mounted() {

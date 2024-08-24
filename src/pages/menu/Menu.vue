@@ -1,6 +1,6 @@
 <template>
    <section class="page__content">
-      <div class="menu">
+      <div class="menu inner">
          <div :key="menuItems.categories" class="grid--default grid-2--tablet-landscape-up">
             <div v-for="category in menuItems.categories" :key="category.id"
                class="menu-item__item-category grid-item fade-animation">
