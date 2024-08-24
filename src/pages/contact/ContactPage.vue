@@ -26,7 +26,10 @@
                         <span>{{ lunchTime }}</span>
                         <span>{{ dinnerTime }}</span>
                      </p>
-                     <h2>Unsere Lokale</h2>
+                     <h2>Unsere Lokale</h2><br>
+                     <label class="form-label" for="restaurant-information">Wähle ein Restaurant für weitere
+                        Informationen
+                        aus</label>
                      <div class="form-group">
                         <select class="form-control" id="restaurant-information" name="select-restaurant"
                            v-model="selectedRestaurant" required>
@@ -136,7 +139,7 @@ export default {
 }
 
 a {
-   color: $color-primary;
+   color: $color-secondary;
 }
 
 p {
