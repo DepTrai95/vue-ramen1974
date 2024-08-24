@@ -14,6 +14,7 @@
                <ul class="list--unstyled">
                   <LinkRouter link="/" label="Home" />
                   <LinkRouter link="/menu" label="Menu" />
+                  <LinkRouter link="/franchise" label="Franchise" />
                   <LinkRouter link="/contact" label="Kontakt" />
                </ul>
                <ul class="list--unstyled social-media-menu">

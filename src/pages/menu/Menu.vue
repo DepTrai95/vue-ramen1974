@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 .page__content {
-   padding: 10rem 3rem;
+   padding: 5rem 3rem;
 }
 
 .menu {
