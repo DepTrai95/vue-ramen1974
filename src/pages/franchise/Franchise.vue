@@ -17,7 +17,7 @@
       <div class="inner">
          <section>
             <h2>Werden Sie Teil unserer Erfolgsgeschichte</h2>
-            <p>Wir möchten expandieren und suchen Unternehmer mit Weitblick und Interesse an einem bewährten
+            <p>Wir möchten expandieren und suchen Unternehmer mit Weitblick und die Interesse an einem bewährten
                Geschäftskonzept haben.
                Dann ist eine Franchise-Partnerschaft mit uns genau das Richtige für Sie!
             </p>
@@ -77,6 +77,7 @@ export default {
    .franchise__list {
       li {
          display: list-item;
+         line-height: 1.5;
          list-style: disc;
       }
    }
