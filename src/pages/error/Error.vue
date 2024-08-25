@@ -6,12 +6,21 @@
                Bei Ihrer Reservierung/Anfrage kam es leider zu Problemen.
                Bitte versuchen Sie es später erneut oder direkt über E-Mail!
             </p>
-            <router-link to="/" class="btn--primary">← Zurück zur Homepage</router-link>
-            <router-link to="/contact" class="btn--primary">← Zurück zur Formular</router-link>
+            <a class="btn--primary" href="" @click.prevent="goBack">← Zurück Zum Formular</a>
          </div>
       </div>
    </section>
 </template>
+
+<script>
+export default {
+   methods: {
+      goBack() {
+         history.back();
+      }
+   }
+}
+</script>
 
 <style lang="scss" scoped>
 section {
