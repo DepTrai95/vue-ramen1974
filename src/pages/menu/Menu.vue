@@ -66,7 +66,11 @@ export default {
 
 <style lang="scss" scoped>
 .page__content {
-   padding: 5rem 3rem;
+   padding: 3rem 1rem;
+
+   @include for-tablet-portrait-up {
+      padding: 5rem 3rem;
+   }
 }
 
 .menu {
@@ -150,8 +154,12 @@ h2 {
       margin: 0;
       position: absolute;
       right: 0;
-      top: 16px;
+      top: 14px;
       z-index: 1;
+
+      @include for-tablet-landscape-up {
+         top: 15px;
+      }
    }
 
    &-description {

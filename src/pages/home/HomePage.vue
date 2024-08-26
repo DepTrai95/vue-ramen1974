@@ -28,9 +28,9 @@ export default {
             heading: 'Our Story',
             headingDescription: 'Discover',
             content: [
-               { id: '1', text: 'Ramen1974 ist ein japanische Ramen-Restaurant-Kette, welches im Dresden und Leipzig liegt.' },
-               { id: '2', text: 'Hier werden sie der japanischen Küche näher gebracht mit köstlichsten Speisen wie Gyoza, Ramen und Poke-Bowls.' },
-               { id: '3', text: 'Die japanische Küche ist bekannt für ihre unglaubliche Vielfalt, die sensationale Qualität und vor allem auch für die Schönheit des Essens.' },
+               { id: '1', text: 'Ramen1974 ist eine Restaurant-Kette die sich auf Ramen spezialisiert hat, welches in Dresden und Leipzig ansässig ist.' },
+               { id: '2', text: 'Hier werden sie der japanischen Küche näher gebracht mit köstlichsten Speisen wie Ramen, Gyoza und Poke-Bowls.' },
+               { id: '3', text: 'Die japanische Küche ist bekannt für ihre unglaubliche Vielfalt, die sensationale Qualität, die Schönheit des Essens und vor allem für ihre Komplexität im Geschmack.' },
             ]
          },
          aboutUsImages: [
@@ -42,7 +42,7 @@ export default {
             heading: 'Menu',
             headingDescription: 'Discover',
             content: [
-               { id: '1', text: 'Bei uns könnt ihr die besten Ramen der Stadt genießen. Perfekt dazu unsere leckeren Vorspeisen sowie Desserts wie Mochi-Kuchen oder Matcha-Eis. Wir lieben gesundes leckeres Essen, Ihr vermutlich auch!' },
+               { id: '1', text: 'Bei uns könnt ihr die besten Ramen der Stadt genießen. Perfekt dazu unsere leckeren Vorspeisen, sowie Desserts wie Mochi-Kuchen oder Matcha-Eis. Wir lieben gesundes leckeres Essen, Ihr vermutlich auch!' },
             ]
          },
          menuImages: [

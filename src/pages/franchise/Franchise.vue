@@ -96,7 +96,7 @@ p {
    height: 15px;
    left: 0;
    position: absolute;
-   top: -8px;
+   top: -6px;
    width: 100%;
    z-index: 10;
 
