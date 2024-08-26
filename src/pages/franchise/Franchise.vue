@@ -75,6 +75,8 @@ export default {
    }
 
    .franchise__list {
+      padding-inline-start: 2rem;
+
       li {
          display: list-item;
          line-height: 1.5;
