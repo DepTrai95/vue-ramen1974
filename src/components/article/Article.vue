@@ -66,72 +66,77 @@ export default {
    }
 }
 
-.article__content__heading {
-   text-align: center;
+.article__content {
+   .grid--default .grid--default {
+      margin: 0;
+   }
 
-   h2 {
-      @include responsive-font-size(8.5rem, 10rem);
-      color: $color-secondary;
-      font-family: "HerrVonMuellerhoff", "Brush Script MT Italic", sans-serif;
-      font-weight: 400;
+   &__heading {
       text-align: center;
 
-      @include for-tablet-portrait-up {
-         @include responsive-font-size(10rem, 10.5rem);
-      }
-   }
-}
+      h2 {
+         @include responsive-font-size(8.5rem, 10rem);
+         color: $color-secondary;
+         font-family: "HerrVonMuellerhoff", "Brush Script MT Italic", sans-serif;
+         font-weight: 400;
+         text-align: center;
 
-.article__content__separator {
-   @include responsive-font-size(1.7rem, 1.8rem);
-   font-family: serif;
-   margin-block: 2.4rem;
-   opacity: 0.8;
-   text-align: center;
-}
-
-.article__content__text {
-   @include responsive-font-size(1.8rem, 1.9rem);
-   text-align: center;
-
-   a {
-      @include responsive-font-size(2rem, 2.1rem);
-      color: $color-secondary;
-      text-transform: uppercase;
-      overflow: hidden;
-      padding-block: 1rem;
-      position: relative;
-      text-decoration-line: none;
-      transition: color 0.2s ease-in;
-      width: auto;
-
-      &:hover,
-      &:focus {
-         color: $color-primary;
-      }
-
-      &::before {
-         border: 1px solid currentColor;
-         border: 1.5px solid currentColor;
-         bottom: 0;
-         content: "";
-         left: 0;
-         position: absolute;
-         transform-origin: center left;
-         transform: scale3d(0, 1, 1);
-         transition-delay: 3s;
-         transition: transform .3s cubic-bezier(.22, .61, .36, 1);
-         width: 0;
-      }
-
-      &:hover::before,
-      &:focus::before {
-         transition-delay: 0s;
-         transform: scale3d(1, 1, 1);
-         width: 100%;
+         @include for-tablet-portrait-up {
+            @include responsive-font-size(10rem, 10.5rem);
+         }
       }
    }
 
+   &__separator {
+      @include responsive-font-size(1.7rem, 1.8rem);
+      font-family: serif;
+      margin-block: 2.4rem;
+      opacity: 0.8;
+      text-align: center;
+   }
+
+   &__text {
+      @include responsive-font-size(1.8rem, 1.9rem);
+      text-align: center;
+
+      a {
+         @include responsive-font-size(2rem, 2.1rem);
+         color: $color-secondary;
+         text-transform: uppercase;
+         overflow: hidden;
+         padding-block: 1rem;
+         position: relative;
+         text-decoration-line: none;
+         transition: color 0.2s ease-in;
+         width: auto;
+
+         &:hover,
+         &:focus {
+            color: $color-primary;
+         }
+
+         &::before {
+            border: 1px solid currentColor;
+            border: 1.5px solid currentColor;
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            transform-origin: center left;
+            transform: scale3d(0, 1, 1);
+            transition-delay: 3s;
+            transition: transform .3s cubic-bezier(.22, .61, .36, 1);
+            width: 0;
+         }
+
+         &:hover::before,
+         &:focus::before {
+            transition-delay: 0s;
+            transform: scale3d(1, 1, 1);
+            width: 100%;
+         }
+      }
+   }
 }
 </style>
 
