@@ -132,7 +132,7 @@ export default {
 
 .restaurant__information {
    margin-inline: 2rem;
-   padding-block: 5rem;
+   padding-block: 3rem;
 
    @include for-tablet-portrait-up {
       margin: 0 auto;
@@ -143,11 +143,11 @@ export default {
 .copyright__area {
    background-color: $color-background-copyright;
    color: $color-body-copyright;
-   padding-block: 4rem;
+   padding-block: 2.5rem;
    position: relative;
 
    @include for-tablet-portrait-up {
-      padding-block: 6rem 5rem;
+      padding-block: 3rem;
    }
 }
 

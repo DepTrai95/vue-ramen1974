@@ -159,7 +159,7 @@ export default {
          flex-direction: row;
          justify-content: space-between;
          inset-inline: 0;
-         padding: 1.5rem 2.5rem;
+         // padding: 1.5rem 2.5rem;
          position: fixed;
       }
    }

@@ -1,5 +1,6 @@
 <template>
    <div class="content">
+      <skip-links></skip-links>
       <Article :article="aboutUsText">
          <Gallery v-for="fileName in aboutUsImages" :key="fileName" :fileName="fileName"></Gallery>
       </Article>
@@ -11,12 +12,14 @@
 </template>
 
 <script>
+import SkipLinks from '../../components/skiplinks/SkipLinks.vue';
 import Article from '../../components/article/Article.vue';
 import SubHeader from '../../components/header/SubHeader.vue';
 import Gallery from '../../components/gallery/Gallery.vue';
 
 export default {
    components: {
+      SkipLinks,
       Article,
       SubHeader,
       Gallery,
