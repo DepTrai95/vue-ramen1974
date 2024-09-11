@@ -19,13 +19,7 @@
             <div class="grid--default grid-2--tablet-landscape-up">
                <div class="grid-item">
                   <div class="reservation-info">
-                     <h2>Telefonisch</h2><br>
-                     <p>
-                        Sie können uns telefonisch erreichen um eine Tischreservierung vorzunehmen oder aber auch um
-                        Bestellungen aufzugeben, die Sie gerne abholen würden. Erreichbar sind wir von
-                        <span>{{ lunchTime }}</span>
-                        <span>{{ dinnerTime }}</span>
-                     </p>
+
                      <h2>Unsere Lokale</h2><br>
                      <label class="form-label" for="restaurant-information">Wähle ein Restaurant für weitere
                         Informationen
@@ -51,6 +45,17 @@
                         Wir freuen uns auf Ihre Kontaktaufnahme. Schreiben Sie uns und wir melden uns so schnell wie
                         möglich zurück. Vielen Dank!
                      </p>
+                     <h2>Telefonisch</h2><br>
+                     <p>
+                        Sie können uns telefonisch erreichen um eine Tischreservierung vorzunehmen oder aber auch um
+                        Bestellungen aufzugeben, die Sie gerne abholen würden. Erreichbar sind wir von
+                     </p>
+                     <div v-for="restaurant in restaurants" :key="restaurant.id">
+                        <p v-if="restaurant.name === selectedRestaurant">
+                           <span>{{ restaurant.lunchTime }}</span>
+                           <span>{{ restaurant.dinnerTime }}</span>
+                        </p>
+                     </div>
                   </div>
                </div>
                <div class=" grid-item">
@@ -82,6 +87,8 @@ export default {
                number: '0351 81075888',
                mail: 'info@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974dresden/',
+               lunchTime: "11:30 - 14:30",
+               dinnerTime: "17:00 - 21:30",
             },
             {
                id: 2,
@@ -90,6 +97,8 @@ export default {
                number: '0351 48488370',
                mail: 'info@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974dresden/',
+               lunchTime: "11:00 - 20:45",
+               dinnerTime: "",
             },
             {
                id: 3,
@@ -98,6 +107,8 @@ export default {
                number: '0341 30677090',
                mail: 'leipzig-karli@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974leipzig/',
+               lunchTime: "11:30 - 14:30",
+               dinnerTime: "17:00 - 21:15",
             },
             {
                id: 4,
@@ -106,6 +117,8 @@ export default {
                number: '0178 4918616',
                mail: 'leipzig-zentrum@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974.zentrumleipzig/',
+               lunchTime: "11:30 - 14:30",
+               dinnerTime: "17:00 - 21:15",
             },
          ],
       };
