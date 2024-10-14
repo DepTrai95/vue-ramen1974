@@ -155,6 +155,7 @@
     {
       "name": "Mittagstisch",
       "description": "(Montags-Freitags, außer Feiertage, von 11:30 bis 14:30 Uhr)",
+      "description_second_line": "Gilt nicht für alle Lokale - Fragen Sie gegebenenfalls nach",
       "items": [
         {
           "id": "M1",

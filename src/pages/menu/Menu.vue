@@ -6,6 +6,7 @@
                class="menu-item__item-category grid-item fade-animation">
                <h2>{{ category.name }}</h2>
                <p v-if="category.description">{{ category.description }}</p>
+               <p v-if="category.description_second_line">{{ category.description_second_line }}</p>
                <hr class="separator">
                <ul>
                   <menu-item v-for="menuItem in category.items" :key="menuItem.id" :menu-item="menuItem"

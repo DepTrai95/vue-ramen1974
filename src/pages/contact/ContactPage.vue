@@ -114,7 +114,7 @@ export default {
                id: 4,
                name: 'Leipzig Zentrum',
                address: 'Hainstraße 10, 04109 Leipzig',
-               number: '0178 4918616',
+               number: '0341 24835694',
                mail: 'leipzig-zentrum@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974.zentrumleipzig/',
                lunchTime: "11:30 - 14:30",
