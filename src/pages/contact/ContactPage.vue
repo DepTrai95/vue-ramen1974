@@ -52,8 +52,8 @@
                      </p>
                      <div v-for="restaurant in restaurants" :key="restaurant.id">
                         <p v-if="restaurant.name === selectedRestaurant">
-                           <span>{{ restaurant.lunchTime }}</span>
-                           <span>{{ restaurant.dinnerTime }}</span>
+                           <span>{{ restaurant.lunchTime }} Uhr</span>
+                           <span>{{ restaurant.dinnerTime }} Uhr</span>
                         </p>
                      </div>
                   </div>

@@ -3,11 +3,15 @@
       <div class="restaurant__information">
          <div class="footer__addresses">
             <h3>UNSERE STANDORTE</h3>
-            <a class="footer__link" href="https://maps.app.goo.gl/WkowBaccnf61JC8o9">Alaunstraße 23 - 01099 Dresden</a>
-            <a class="footer__link" href="https://maps.app.goo.gl/dMRZQbX4anF8QJux5">Prager Str. 7 - 01069 Dresden</a>
-            <a class="footer__link" href="https://maps.app.goo.gl/ug2hGZ6iiR57m97K8">Karl-Liebknecht-Straße 97 - 04275
+            <a class="footer__link" href="https://maps.app.goo.gl/WkowBaccnf61JC8o9" target="_blank" noopener
+               noreferrer>Alaunstraße 23 - 01099 Dresden</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/dMRZQbX4anF8QJux5" target="_blank" noopener
+               noreferrer>Prager Str. 7 - 01069 Dresden</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/ug2hGZ6iiR57m97K8" target="_blank" noopener
+               noreferrer>Karl-Liebknecht-Straße 97 - 04275
                Leipzig</a>
-            <a class="footer__link" href="https://maps.app.goo.gl/T89eCG7edypdJxXL7">Hainstr. 10 - 04109 Leipzig</a>
+            <a class="footer__link" href="https://maps.app.goo.gl/T89eCG7edypdJxXL7" target="_blank" noopener
+               noreferrer>Hainstr. 10 - 04109 Leipzig</a>
          </div>
          <div class="footer__opening-hours">
             <h3>ÖFFNUNGSZEITEN:</h3>
