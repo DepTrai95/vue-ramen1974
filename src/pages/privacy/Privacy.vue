@@ -8,16 +8,16 @@
          <h3 class="h2">Verantwortlicher</h3>
          <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
 
-         <p>Anamit - Vietnamese Authentic</p>
-         <p>Louisenstr. 30</p>
-         <p>01097 Dresden</p>
+         <p>Ramen1974</p>
+         <p>Alaunstraße 23</p>
+         <p>01099 Dresden</p>
          <p>
             Telefon
-            <a href="tel:0351 65677999" class="link">0351 65677999</a>
+            <a href="tel:0351 81075888" class="link">0351 81075888</a>
          </p>
          <p>
             E-Mail
-            <a href="mailto:info@anamit.de" class="link">info@anamit.de</a>
+            <a href="mailto:info@ramen1974.de" class="link">info@ramen1974.de</a>
          </p>
 
          <h3 class="h2">Verarbeitung personenbezogener Daten</h3>
