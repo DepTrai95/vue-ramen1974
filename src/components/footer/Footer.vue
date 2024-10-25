@@ -44,11 +44,10 @@
          </div>
          <div class="copyright__area__container">
             <ul class="copyright__area__container__list">
+               <li><span class="copyright-logo">© {{ getCurrentYear }} Ramen1974</span></li>
                <LinkRouter link="/impressum" label="Impressum" />
+               <LinkRouter link="/privacy" label="Datenschutz" />
                <LinkRouter link="/contact" label="Kontakt" />
-               <li>
-                  <a href="https://www.facebook.com/Ramen1974/">Ramen1974 on Facebook</a>
-               </li>
             </ul>
          </div>
       </div>
@@ -101,9 +100,16 @@ export default {
          })
       }
    },
+   
    mounted() {
       this.scrollListener = this.handleScroll.bind(this);
       window.addEventListener('scroll', this.scrollListener);
+   },
+   
+   computed: {
+      getCurrentYear() {
+         return new Date().getFullYear();
+      }
    },
 }
 </script>
@@ -162,6 +168,18 @@ export default {
    justify-content: center;
    margin: 0;
    padding-inline: 3rem;
+
+   .copyright-logo {
+      @include responsive-font-size(1.2rem, 1.3rem);
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-inline: 1rem;
+      padding-block: 0.5rem;
+      text-transform: uppercase;
+   }
 }
 
 // footer button to top

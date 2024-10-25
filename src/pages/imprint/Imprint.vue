@@ -1,5 +1,5 @@
 <template>
-   <section>
+   <section class="imprint">
       <div class="inner">
          <h2>ANGABEN GEMÄSS § 5 TMG</h2>
          <p>Somico GmbH</p>
@@ -57,13 +57,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.imprint {
+   margin-block: 3em;
+}
+
 h2,
 h3 {
-   margin-block: 4rem 3rem;
+   margin-block: 3rem;
 }
 
 p {
    line-height: 1.6;
-   margin-block-end: 2rem;
+   margin-block-end: 1rem;
 }
 </style>

@@ -5,7 +5,8 @@ import Home from '../pages/home/HomePage.vue'
 import Menu from '../pages/menu/Menu.vue'
 import Franchise from '../pages/franchise/Franchise.vue'
 import Contact from '../pages/contact/ContactPage.vue'
-import Impress from '../pages/impress/Impress.vue'
+import Imprint from '../pages/imprint/Imprint.vue'
+import Privacy from '@/pages/privacy/Privacy.vue'
 import Success from '../pages/success/Success.vue'
 import Error from '../pages/error/Error.vue'
 import NotFound from '../pages/NotFound.vue'
@@ -49,9 +50,16 @@ const router = createRouter({
     },
     {
       path: '/impressum',
-      component: Impress,
+      component: Imprint,
       meta: {
         headline: 'Impressum'
+      }
+    },
+    {
+      path: '/privacy',
+      component: Privacy,
+      meta: {
+        headline: 'Datenschutz'
       }
     },
     {
