@@ -20,4 +20,8 @@
     <loc>https://ramen1974.de/impressum</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://ramen1974.de/privacy</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
