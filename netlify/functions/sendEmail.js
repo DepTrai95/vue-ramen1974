@@ -9,7 +9,7 @@ export const handler = async (event, context) => {
     const msg = {
       to: to,
       from: {
-        email: 'info@ramen1974.de',
+        email: 'info@somico-delivery.de',
         name: name
       },
 
