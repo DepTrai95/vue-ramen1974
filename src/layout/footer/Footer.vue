@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import LinkRouter from '../link/LinkRouter.vue'
+import LinkRouter from '@/components/link/LinkRouter.vue'
 
 export default {
    components: {

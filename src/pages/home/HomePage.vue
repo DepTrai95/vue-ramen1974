@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import SkipLinks from '../../components/skiplinks/SkipLinks.vue';
-import Article from '../../components/article/Article.vue';
-import SubHeader from '../../components/header/SubHeader.vue';
-import Gallery from '../../components/gallery/Gallery.vue';
+import SkipLinks from '@/components/skiplinks/SkipLinks.vue';
+import Article from '@/components/article/Article.vue';
+import SubHeader from '@/layout/header/SubHeader.vue';
+import Gallery from '@/components/gallery/Gallery.vue';
 
 export default {
    components: {

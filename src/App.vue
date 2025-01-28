@@ -12,8 +12,8 @@
 
 <script>
 import SVGList from './assets/svg/SVGList.vue';
-import Header from './components/header/Header.vue';
-import Footer from './components/footer/Footer.vue';
+import Header from './layout/header/Header.vue';
+import Footer from './layout/footer/Footer.vue';
 
 export default {
   components: {
