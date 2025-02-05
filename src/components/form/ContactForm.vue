@@ -177,7 +177,7 @@ export default {
       const receiverEmail = (() => {
         switch (formData.restaurant) {
           case "Dresden Neustadt":
-            return "info@ramen1974.de";
+            return "dresden-neustadt@ramen1974.de";
           case "Dresden Altstadt":
             return "info@ramen1974.de";
           case "Leipzig Karl-Liebknecht-Straße":
