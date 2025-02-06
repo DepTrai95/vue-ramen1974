@@ -85,7 +85,7 @@ export default {
                name: 'Dresden Neustadt',
                address: 'Alaunstraße 23, 01099 Dresden',
                number: '0351 81075888',
-               mail: 'info@ramen1974.de',
+               mail: 'dresden-neustadt@ramen1974.de',
                instagram: 'https://www.instagram.com/ramen1974dresden/',
                lunchTime: "11:30 - 14:30",
                dinnerTime: "17:00 - 21:30",
