@@ -5,8 +5,9 @@
             <div v-for="category in menuItems.categories" :key="category.id"
                class="menu-item__item-category grid-item fade-animation">
                <h2>{{ category.name }}</h2>
-               <p v-if="category.description">{{ category.description }}</p>
-               <p v-if="category.description_second_line">{{ category.description_second_line }}</p>
+               <p class="m0" v-if="category.description">{{ category.description }}</p>
+               <p class="m0 text-small" v-if="category.description_second_line">{{ category.description_second_line }}</p>
+               <p class="m0 text-small" v-if="category.description_third_line">{{ category.description_third_line }}</p>
                <hr class="separator">
                <ul>
                   <menu-item v-for="menuItem in category.items" :key="menuItem.id" :menu-item="menuItem"
@@ -14,7 +15,12 @@
                </ul>
             </div>
          </div>
-         <p>Alle Speisen und Preise Stand 15.06.2024</p>
+         <p>Alle Speisen und Preise Stand 01.04.2025</p>
+         <div class="menu-download">
+            <p>Unser Menü könnt ihr euch auch als digitale Version ansehen</p>
+            <a class="link" href="/fileadmin/ramen1974-menu-2025-high.pdf">Menu (hochauflösend) herunterladen (14.72MB)</a>
+            <a class="link" href="/fileadmin/ramen1974-menu-2025.pdf">Menu (geringere Auflösung)herunterladen (1.78MB)</a>
+         </div>
       </div>
    </section>
 </template>
@@ -66,6 +72,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.m0 {
+   margin: 0;
+}
+
+.text-small {
+   font-size: 1.5rem;
+}
+
+.menu-download {
+   @include responsive-font-size(1.5rem, 1.6rem);
+   display: flex;
+   flex-direction: column;
+
+   a, p {
+      margin: 0.25rem;
+   }
+}
+
 .page__content {
    padding: 3rem 1rem;
 
@@ -78,7 +102,7 @@ export default {
    hr.separator {
       border: 0;
       border-bottom: 2px solid #d8d8d8;
-      margin: 4rem 0;
+      margin: 3rem 0;
    }
 }
 
@@ -142,9 +166,7 @@ h2 {
    }
 
    .dots {
-      background-image: radial-gradient(circle closest-side,
-            currentColor 99%,
-            transparent 1%);
+      background-image: radial-gradient(circle closest-side, currentColor 99%, transparent 1%);
       background-position: bottom;
       background-repeat: repeat-x;
       background-size: 6px 3px;

@@ -1,198 +1,217 @@
 {
-  "categories": [
-    {
-      "name": "Vorspeisen",
-      "items": [
-        {
-          "id": "V1",
-          "name": "Edamame",
-          "description": "Gekochte Sojabohnen",
-          "price": 5.5
-        },
-        {
-          "id": "V2",
-          "name": "Gurkensticks mit Sesamdip",
-          "description": "",
-          "price": 4.5
-        },
-        {
-          "id": "V3",
-          "name": "Kuki Wakane",
-          "description": "Algensalat",
-          "price": 6.5
-        },
-        {
-          "id": "V4",
-          "name": "Kimchi",
-          "description": "",
-          "price": 5.9
-        },
-        {
-          "id": "V5",
-          "name": "Hiyayakko",
-          "description": "Kühler Seidentofu, getoppt mit Frühlingszwiebeln und Sojasoße",
-          "price": 5.2
-        },
-        {
-          "id": "V6",
-          "name": "Gyoza",
-          "description": "Maultaschen mit Hähnchenhackfleisch und Gemüse",
-          "price": 5.9
-        },
-        {
-          "id": "V7",
-          "name": "Yasai Gyoza",
-          "description": "Spinatteigtaschen mit Gemüsefüllung",
-          "price": 5.7
-        },
-        {
-          "id": "V8",
-          "name": "Moyatan",
-          "description": "Scharfes Hackfleisch mit Sojasprossen",
-          "price": 5.5
-        },
-        {
-          "id": "V9",
-          "name": "Kakuni",
-          "description": "Süßer Schweinebauch",
-          "price": 5.5
-        }
-      ]
-    },
-    {
-      "name": "Ramen",
-      "items": [
-        {
-          "id": "R1",
-          "name": "Miso",
-          "description": "Hühnerbrühe auf Misobasic, Gemüse, halbes Ei und Schweine-Chashu oder Hühner-Chashu",
-          "price": 13.9
-        },
-        {
-          "id": "R2",
-          "name": "Shoyu",
-          "description": "Hühnerbrühe auf Sojasoßen-Basis, Gemüse, halbes Ei und Schweine-Chashu oder Hühner-Chashu",
-          "price": 13.5
-        },
-        {
-          "id": "R3",
-          "name": "Tantan",
-          "description": "Hühnerbrühe auf Miso und Sesam-Basis, Gemüse, halbes Ei und Schweinehackfleisch, scharf",
-          "price": 13.9
-        },
-        {
-          "id": "R4",
-          "name": "Tonkotsu",
-          "description": "Schweinebrühe auf Sojasoßen-Basis, Gemüse, halbes Ei und süßes Schweinefleisch",
-          "price": 14.5
-        }
-      ]
-    },
-    {
-      "name": "Poke-Bowl",
-      "items": [
-        {
-          "id": "B1",
-          "name": "Vegan-Bowl",
-          "description": "Tofu, Avocado, Pak-Choi, Sesam auf Reis",
-          "price": 13.5
-        },
-        {
-          "id": "B2",
-          "name": "Schweine-Bowl",
-          "description": "Süßes Schweinefleisch mit grünem Spargel, Mango auf Reis",
-          "price": 13.5
-        },
-        {
-          "id": "B3",
-          "name": "Hühner-Bowl",
-          "description": "Hühner-Chashu mit Pak-Choi, Bambus, Avocado auf Reis",
-          "price": 13.5
-        },
-        {
-          "id": "B4",
-          "name": "Spezial-Bowl",
-          "description": "Tofu, süßes Schweinefleisch, Hühner-Chashu, Avocado, Bambus und Pak-Choi auf Reis",
-          "price": 14.9
-        },
-        {
-          "id": "B5",
-          "name": "Tekkadon",
-          "description": "japanische Reis-Bowl mit mariniertem, karamellisiertem Thunfisch, Pakchoi, Mungbohnensprossen und Shiitake Pilzen",
-          "price": 14.9
-        },
-        {
-          "id": "B5",
-          "name": "Tonkatsu Curry",
-          "description": "japanisches Curry mit knusprig paniertem Schwein/Hühner 'Schnitzel' und Zuckerschoten, serviert mit Reis",
-          "price": 14.9
-        }
-      ]
-    },
-    {
-      "name": "Vegan - Veggie Ramen",
-      "items": [
-        {
-          "id": "VV1",
-          "name": "Veggie Miso",
-          "description": "vegetarische Brühe auf Miso-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und Tofu",
-          "price": 13.9
-        },
-        {
-          "id": "VV2",
-          "name": "Veggie Shoyu",
-          "description": "vegetarische Brühe auf Sojasoßen-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und Tofu",
-          "price": 13.5
-        },
-        {
-          "id": "VV3",
-          "name": "Veggie Tantan",
-          "description": "vegetarische Brühe auf Miso und Sesam-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und vegetarisches Hackfleisch, scharf",
-          "price": 13.9
-        }
-      ]
-    },
-    {
-      "name": "Mittagstisch",
-      "description": "(Montags-Freitags, außer Feiertage, von 11:30 bis 14:30 Uhr)",
-      "description_second_line": "Gilt nicht für alle Lokale - Fragen Sie gegebenenfalls nach",
-      "items": [
-        {
-          "id": "M1",
-          "name": "Alle Nudeln ihrer Wahl",
-          "description": "(Miso/Shoyu/Tantan/Tonkotsu) mit Wasser oder Tee",
-          "price": 12.5
-        }
-      ]
-    },
-    {
-      "name": "Nachtische",
-      "items": [
-        {
-          "id": "N1",
-          "name": "Mochi-Eis (3 Stück)",
-          "description": "",
-          "price": 5.9
-        },
-        {
-          "id": "N2",
-          "name": "Matcha Eis",
-          "description": "",
-          "price": 5.5
-        },
-        {
-          "id": "N3",
-          "name": "Mochi-Kuchen (3 Stück)",
-          "description": "",
-          "price": 4.5
-        },
-        {
-          "id": "N4",
-          "name": "Dorayaki",
-          "description": "Japanische Pfannkuchen mit Adzukibohnen",
-          "price": 3.8
-        }
-      ]
-    }
-  ]
+   "categories": [
+      {
+         "name": "Vorspeisen",
+         "items": [
+         {
+            "id": "V1",
+            "name": "Edamame",
+            "description": "Gekochte Sojabohnen",
+            "price": 5.9
+         },
+         {
+            "id": "V2",
+            "name": "Gurkensticks mit Sesamdip",
+            "description": "",
+            "price": 4.9
+         },
+         {
+            "id": "V3",
+            "name": "Kuki Wakane",
+            "description": "Algensalat",
+            "price": 6.9
+         },
+         {
+            "id": "V4",
+            "name": "Kimchi",
+            "description": "",
+            "price": 6.4
+         },
+         {
+            "id": "V5",
+            "name": "Hiyayakko",
+            "description": "Kühler Seidentofu, getoppt mit Frühlingszwiebeln und Sojasoße",
+            "price": 5.5
+         },
+         {
+            "id": "V6",
+            "name": "Gyoza",
+            "description": "Maultaschen mit Hähnchenhackfleisch und Gemüse",
+            "price": 6.4
+         },
+         {
+            "id": "V7",
+            "name": "Yasai Gyoza",
+            "description": "Spinatteigtaschen mit Gemüsefüllung",
+            "price": 6.2
+         },
+         {
+            "id": "V8",
+            "name": "Moyatan",
+            "description": "Scharfes Hackfleisch mit Sojasprossen",
+            "price": 5.9
+         },
+         {
+            "id": "V9",
+            "name": "Kakuni",
+            "description": "Süßer Schweinebauch",
+            "price": 5.9
+         }
+         ]
+      },
+      {
+         "name": "Ramen",
+         "items": [
+            {
+               "id": "R1",
+               "name": "Miso",
+               "description": "Hühnerbrühe auf Misobasic, Gemüse, halbes Ei und Schweine-Chashu oder Hühner-Chashu",
+               "price": 14.9
+            },
+            {
+               "id": "R2",
+               "name": "Shoyu",
+               "description": "Hühnerbrühe auf Sojasoßen-Basis, Gemüse, halbes Ei und Schweine-Chashu oder Hühner-Chashu",
+               "price": 14.5
+            },
+            {
+               "id": "R3",
+               "name": "Tantan",
+               "description": "Hühnerbrühe auf Miso und Sesam-Basis, Gemüse, halbes Ei und Schweinehackfleisch, scharf",
+               "price": 14.9
+            },
+            {
+               "id": "R4",
+               "name": "Tonkotsu",
+               "description": "Schweinebrühe auf Sojasoßen-Basis, Gemüse, halbes Ei und süßes Schweinefleisch",
+               "price": 15.5
+            },
+            {
+               "id": "R5",
+               "name": "Sichuan-Ramen",
+               "description": "Hühnerbrühe auf Sichuan-Basis, Gemüse halbes Ei und gegarter Rinderripchen, scharf",
+               "price": 15.9
+            },
+            {
+               "id": "R6",
+               "name": "Curry Tuskemen",
+               "description": "kalte Nudeln, halbes Ei, Rinder-Chashu, Möhren, Kartoffeln, extra heißer Curry-Dip",
+               "price": 14.9
+            },
+            {
+               "id": "R7",
+               "name": "Kakuni-Tsukemen",
+               "description": "kalte Nudeln, halbes Ei, Schweinefleisch, Enokipilze, Shiitake Pilze, extra heißem Soßa-Soßen-Dip",
+               "price": 14.9
+            }
+         ]
+      },
+      {
+         "name": "Poke-Bowl",
+         "items": [
+            {
+               "id": "B1",
+               "name": "Vegan-Bowl",
+               "description": "Tofu, Avocado, Pak-Choi, Sesam auf Reis",
+               "price": 14.5
+            },
+            {
+               "id": "B2",
+               "name": "Schweine-Bowl",
+               "description": "Süßes Schweinefleisch mit grünem Spargel, Mango auf Reis",
+               "price": 14.5
+            },
+            {
+               "id": "B3",
+               "name": "Hühner-Bowl",
+               "description": "Hühner-Chashu mit Pak-Choi, Bambus, Avocado auf Reis",
+               "price": 14.5
+            },
+            {
+               "id": "B4",
+               "name": "Spezial-Bowl",
+               "description": "Tofu, süßes Schweinefleisch, Hühner-Chashu, Avocado, Bambus und Pak-Choi auf Reis",
+               "price": 15.9
+            },
+            {
+               "id": "B5",
+               "name": "Tekkadon",
+               "description": "japanische Reis-Bowl mit mariniertem, karamellisiertem Thunfisch, Pakchoi, Mungbohnensprossen und Shiitake Pilzen",
+               "price": 15.9
+            },
+            {
+               "id": "B6",
+               "name": "Tonkatsu Curry",
+               "description": "japanisches Curry mit knusprig paniertem Schwein/Hühner 'Schnitzel' und Zuckerschoten, serviert mit Reis",
+               "price": 15.9
+            }
+         ]
+      },
+      {
+         "name": "Vegan - Veggie Ramen",
+         "items": [
+            {
+               "id": "VV1",
+               "name": "Veggie Miso",
+               "description": "vegetarische Brühe auf Miso-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und Tofu",
+               "price": 14.9
+            },
+            {
+               "id": "VV2",
+               "name": "Veggie Shoyu",
+               "description": "vegetarische Brühe auf Sojasoßen-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und Tofu",
+               "price": 14.5
+            },
+            {
+               "id": "VV3",
+               "name": "Veggie Tantan",
+               "description": "vegetarische Brühe auf Miso und Sesam-Basis, Gemüse, halbes Ei oder Shiitake-Pilz und vegetarisches Hackfleisch, scharf",
+               "price": 14.9
+            }
+         ]
+      },
+      {
+         "name": "Mittagstisch",
+         "description": "(Montags-Freitags, außer Feiertage, von 11:30 bis 14:30 Uhr)",
+         "description_second_line": "Gilt für Alaunstraße, 01099 Dresden",
+         "description_third_line": "Gilt für Karl-Liebknecht-Straße 97, 04275 Leipzig",
+         "items": [
+            {
+               "id": "M1",
+               "name": "Alle Nudeln ihrer Wahl",
+               "description": "(Miso/Shoyu/Tantan/Tonkotsu) mit Cola/Fanta/Wasser oder Tee",
+               "price": 13.5
+            }
+         ]
+      },
+      {
+         "name": "Nachtische",
+         "items": [
+            {
+               "id": "N1",
+               "name": "Mochi-Eis (3 Stück)",
+               "description": "",
+               "price": 5.9
+            },
+            {
+               "id": "N2",
+               "name": "Matcha Eis",
+               "description": "",
+               "price": 5.5
+            },
+            {
+               "id": "N3",
+               "name": "Mochi-Kuchen (3 Stück)",
+               "description": "",
+               "price": 4.9
+            },
+            {
+               "id": "N4",
+               "name": "Dorayaki",
+               "description": "Japanische Pfannkuchen mit Adzukibohnen",
+               "price": 4.2
+            }
+         ]
+      }
+   ]
 }
